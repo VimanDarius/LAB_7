@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>  
+<body>
+<head>
+<script>
+  function Profil() {
+    document.getElementById("nume").innerHTML = "Student Viman Darius-Marcian";   
+	document.getElementById("poza").src = "poza2.jpg";
+	document.getElementById("demo").innerHTML = "Lucruri pe care trebuie sa le indeplinesti la faculate";
+	document.getElementById("r1").innerHTML= "1. Sa obtii un intership";
+	document.getElementById("r2").innerHTML= "2. Sa faci parte dintr-o oraganizatie studenteasca";
+	document.getElementById("r3").innerHTML= "3. Sa cunosti multa lume faina";
+	document.getElementById("t1").innerHTML= " In domeniul IT-ului";
+	document.getElementById("t2").innerHTML= " OSUT"
+	document.getElementById("t3").innerHTML= "Colegi cu care sa te intelegi bine"
+	document.body.style.background = "#00ff00";
+	document.getElementById("disciplina").innerHTML = "Dorinte";
+	document.getElementById("sursa").innerHTML = "Procedee de realizare"
+}	
+   function arataVarsta()
+   {
+   var azi= new Date;
+   var varstamea;
+   
+   var AnNastere = document.getElementById("varsta").innerHTML;
+   var AnCurent = azi.getFullYear();
+   
+   varstamea = AnCurent - parseInt(AnNastere);
+   
+document.getElementById("varsta").innerHTML = varstamea;
+   }
+</script>
+<style>
+   table, th, td{
+     border: 3px solid black;}
+
+body{ 
+   background : lightblue;
+    }
+h2
+   { 
+   color: navy;
+   margin-left: 60px;
+   }
+   </style>
+   </head>
+
+<h2 id="nume"> Viman Darius-Marcian </h2>
+
+<img id="poza" src="poza.jpg" width="40%" height="40%">
+
+<br><p> Email: dariusvimann@gmail.com </p>
+
+ <br><p> Nr de telefon: 0746****** </p>
+
+<p onmouseover ="arataVarsta()" id="varsta">2001</p>
+ 
+<br><h3 id="demo"><u> Discipline pe care doresc sa le aprofundez</u></h3>
+
+
+
+<table style="width:20%">
+    <tr>
+       <th id="disciplina"> Disciplina </th>
+       <th id="sursa"> Sursa </th>
+    </tr>
+  <tr>
+     <td id="r1"> Informatica aplicata  </td>
+     <td><a id="t1" href = "https://www.hipo.ro/locuri-de-munca/cautajobfiltre/Toate-Domeniile/Toate-Orasele/practica/IT?gclid=CjwKCAiA17P9BRB2EiwAMvwNyO6ECkk5J5VlfKYB6mh_0xKkF2DQmXt3mRyKB55FlxUAYfElQTVQ4BoClFQQAvD_BwE"> Info </a></td> 
+  </tr>	
+  <tr>
+     <td id="r2"> Componente circuite pasive </td>
+	 <td><a id="t2" href = "https://osut.org/"> Circuite</a></td>
+  </tr>
+  <tr>
+     <td id="r3"> Ecuatii diferentiale </td>
+	 <td><a id="t3" href = "https://etti.utcluj.ro/files/Studenti/T1_seria_A.pdf"> Ecuatii </a></td>
+  </tr>
+  </table>
+  
+  
+  
+<br><br><h3> Hobby-uri:</h3>
+    <ul>
+	<li >Baschet</li>
+	<li>Citit</li>
+	<li>Plimbarile lungi</li>
+	</ul>  
+	 <button type="button" onclick="Profil()">Alta viata</button>
+</body>
+</html>
